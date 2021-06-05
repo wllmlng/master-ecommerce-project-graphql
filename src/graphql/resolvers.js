@@ -30,6 +30,9 @@ const GET_CART_ITEMS = gql `
     }
 `;
 
+//Apollo Server needs to know how to populate data for every field in your schema 
+//so that it can respond to requests for that data.
+//resolver is a function that's responsible for populating the data for a single field in your schema
 export const resolvers = {
     Mutation: {
         //toggleCartHidden = type mutation js
